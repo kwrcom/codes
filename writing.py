@@ -3,7 +3,7 @@ from parsing import array
 
 def writer(parametr):
     book = xlsxwriter.Workbook(r"C:\Users\Админ\Desktop\data.xlsx")
-    page = book.add_worksheet("tovary")
+    page = book.add_worksheet("list with card")
     
     row = 0
     column = 0
@@ -23,3 +23,5 @@ def writer(parametr):
     book.close()
     
 writer(array)
+
+print("finish")

@@ -24,7 +24,6 @@ def array():
     for card_url in urls:
         
         response = requests.get(card_url, headers=headers)
-        sleep(3)
         soup = BeautifulSoup(response.text, "lxml")
 
         data = soup.find("div", class_ = "my-8 w-full rounded border")
